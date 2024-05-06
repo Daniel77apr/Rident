@@ -1,0 +1,182 @@
+:root {
+    /* COLORS */
+    --dark-blue: #232841;
+    --light-blue: #34a7de;
+    --green: #57bd7d;
+    --light-gray: #e4f7ff;
+
+    --transparent-light-blue: rgba(52, 167, 222, 0.6);
+    --transparent-white: rgba(255, 255, 255, 0.5);
+}
+
+/* TEXT COLOR */
+
+.dark-blue-text {
+    color: var(--dark-blue);
+}
+
+.light-blue-text {
+    color: var(--light-blue);
+}
+
+.green-text {
+    color: var(--green);
+}
+
+.white-text {
+    color: white;
+}
+
+/* BACKGROUND COLOR */
+
+.dark-blue-bg {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.light-blue-bg {
+    background-color: var(--light-blue);
+}
+
+.green-bg {
+    background-color: var(--green);
+    color: var(--dark-blue);
+}
+
+.light-gray-bg {
+    background-color: var(--light-gray);
+    color: var(--dark-blue);
+}
+
+.white-bg {
+    background-color: white;
+    color: var(--dark-blue)
+}
+
+.transparent-white-bg {
+    background-color: var(--transparent-white);
+    backdrop-filter: blur(10px);
+    color: var(--dark-blue)
+}
+
+/* GENERAL */
+
+.width-max-content {
+    width: max-content;
+}
+
+.fixed-img-bg {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.full-height {
+    height: min(70vw, 100vh);
+    min-height: 70vh;
+}
+
+/* NAVBAR */
+
+nav {
+    background-color: var(--transparent-white);
+    backdrop-filter: blur(10px);
+}
+
+.custom-btn-outline-light-blue {
+    border-color: var(--light-blue);
+    color: var(--light-blue);
+}
+
+.custom-btn-outline-light-blue:hover {
+    background-color: var(--light-blue);
+    color: white;
+}
+
+.custom-btn-light-blue {
+    background-color: var(--light-blue);
+    color: white;
+}
+
+.custom-btn-light-blue:hover {
+    background-color: #2590c2;
+    color: white;
+}
+
+/* HERO */
+
+.hero {
+    background-image: url(../Images/stomatology-office-with-modern-equipment-nurse-wearing-blue-uniform-working-computer.jpg);
+    filter: brightness(95%);
+}
+
+.hero .container-lg {
+    height: 100%;
+}
+
+.hero .container-lg .row {
+    height: inherit;
+}
+
+.text-box {
+    background-color: var(--transparent-white);
+    backdrop-filter: blur(10px);
+    color: var(--dark-blue);
+    height: min-content;
+    border-top: 6px solid var(--green);
+}
+
+/* SERVICIOS */
+
+.servicios {
+    background-image: url(/Images/top-view-career-guidance-items-dentists.jpg);
+    display: flex;
+    flex-direction: column;
+}
+
+.servicios .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.servicios .card {
+    border-left: 6px solid var(--light-blue);
+}
+
+.servicios .card img {
+    width: 100px;
+}
+
+.servicios .card .card-body {
+    align-self: flex-start;
+}
+
+li::marker {
+    color: var(--light-blue);
+}
+
+/* OPINIONES */
+
+.opiniones {
+    background-image: url(/Images/dentist-examining-female-patient-with-tools.jpg);
+}
+
+.card {
+    height: 100%;
+    border: none;
+    border-left: 6px solid var(--green);
+    border-radius: 0;
+}
+
+.card i {
+    color: var(--green);
+}
+
+@media (min-width: 768px) {
+    .text-box {
+        border-top: none;
+        border-left: 6px solid var(--green);
+    }
+}
