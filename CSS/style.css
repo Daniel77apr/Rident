@@ -129,7 +129,7 @@ nav {
 /* SERVICIOS */
 
 .servicios {
-    background-image: url(/Images/top-view-career-guidance-items-dentists.jpg);
+    background-image: url(../Images/top-view-career-guidance-items-dentists.jpg);
     display: flex;
     flex-direction: column;
 }
@@ -160,7 +160,7 @@ li::marker {
 /* OPINIONES */
 
 .opiniones {
-    background-image: url(/Images/dentist-examining-female-patient-with-tools.jpg);
+    background-image: url(../Images/dentist-examining-female-patient-with-tools.jpg);
 }
 
 .card {
