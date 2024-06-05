@@ -4,12 +4,20 @@
     --light-blue: #34a7de;
     --green: #57bd7d;
     --light-gray: #e4f7ff;
+    --neutral-green: #eefaff;
 
     --transparent-light-blue: rgba(52, 167, 222, 0.6);
-    --transparent-white: rgba(255, 255, 255, 0.5);
+    --transparent-white: rgba(255, 255, 255, 0.7);
 }
 
-/* TEXT COLOR */
+/* TEXT */
+
+
+* {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
 
 .dark-blue-text {
     color: var(--dark-blue);
@@ -25,6 +33,10 @@
 
 .white-text {
     color: white;
+}
+
+h2 {
+    color: var(--dark-blue)
 }
 
 /* BACKGROUND COLOR */
@@ -61,122 +73,197 @@
 
 /* GENERAL */
 
-.width-max-content {
-    width: max-content;
-}
-
-.fixed-img-bg {
+body {
+    background-image: url(../Images/fondo.svg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-.full-height {
-    height: min(70vw, 100vh);
-    min-height: 70vh;
+.row img {
+    width: 100%;
+    height: 100%;
+}
+
+.card, .shadow {
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* NAVBAR */
 
 nav {
-    background-color: var(--transparent-white);
+    background-color: var(--dark-blue);
     backdrop-filter: blur(10px);
 }
 
-.custom-btn-outline-light-blue {
-    border-color: var(--light-blue);
-    color: var(--light-blue);
+.custom-btn-green {
+    background-color: var(--green);
+    color: var(--dark-blue);
+    font-weight: 600;
 }
 
-.custom-btn-outline-light-blue:hover {
-    background-color: var(--light-blue);
-    color: white;
-}
-
-.custom-btn-light-blue {
-    background-color: var(--light-blue);
-    color: white;
-}
-
-.custom-btn-light-blue:hover {
-    background-color: #2590c2;
+.custom-btn-green:hover {
+    background-color: #489c67;
     color: white;
 }
 
 /* HERO */
 
 .hero {
-    background-image: url(../Images/stomatology-office-with-modern-equipment-nurse-wearing-blue-uniform-working-computer.jpg);
-    filter: brightness(95%);
+    height: 100vh
 }
 
 .hero .container-lg {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .logotipo {
+    width: min(500px, 70%);
+    height: auto;
 }
 
 .hero .container-lg .row {
     height: inherit;
-}
-
-.text-box {
-    background-color: var(--transparent-white);
+    height: min-content;
+    background-color: white;
     backdrop-filter: blur(10px);
     color: var(--dark-blue);
-    height: min-content;
-    border-top: 6px solid var(--green);
 }
 
-/* SERVICIOS */
-
-.servicios {
-    background-image: url(../Images/top-view-career-guidance-items-dentists.jpg);
-    display: flex;
-    flex-direction: column;
+.hero div img {
+    width: 100%;
+    height: 100%;
 }
 
-.servicios .card {
+/* tratamientos */
+
+.tratamientos .card {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    height: min-content;
 }
 
-.servicios .card {
-    border-left: 6px solid var(--light-blue);
-}
-
-.servicios .card img {
+.tratamientos .card img {
     width: 100px;
 }
 
-.servicios .card .card-body {
+.tratamientos .card .card-body {
     align-self: flex-start;
 }
 
-li::marker {
-    color: var(--light-blue);
+.tratamientos .accordion-item {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
+
+.tratamientos .accordion-button {
+    background-color: inherit;
+}
+
+.tratamientos .accordion-button:focus {
+    box-shadow: none;
+}
+
+.tratamientos .accordion-header {
+    border: none;
+}
+
+li::marker {
+    color: var(--green);
+}
+
+/* INSTALACIONES */
+
 
 /* OPINIONES */
-
-.opiniones {
-    background-image: url(../Images/dentist-examining-female-patient-with-tools.jpg);
-}
-
-.card {
-    height: 100%;
-    border: none;
-    border-left: 6px solid var(--green);
-    border-radius: 0;
-}
 
 .card i {
     color: var(--green);
 }
 
-@media (min-width: 768px) {
-    .text-box {
-        border-top: none;
-        border-left: 6px solid var(--green);
-    }
+/* CONTACTO */
+
+.contacto {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.contacto li, .contacto li a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ANIMATIONS */
+
+section {
+    overflow: hidden;
+}
+
+.animate {
+    transition: transform 0.7s, opacity 0.7s;
+}
+
+.fade-in {
+    opacity: 0;
+}
+
+.show-animate .fade-in {
+    opacity: 100%;
+}
+
+.fade-in-grow {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.show-animate .fade-in-grow {
+    opacity: 100%;
+    transform: scale(1);
+}
+
+.fade-in-to-right {
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+.show-animate .fade-in-to-right {
+    transform: translateX(0);
+    opacity: 100%;
+}
+
+.fade-in-to-left {
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+.show-animate .fade-in-to-left {
+transform: translateX(0);
+opacity: 100%;
+}
+
+.fade-in-to-up {
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.show-animate .fade-in-to-up {
+    transform: translateX(0);
+    opacity: 100%;
+}
+
+.fade-in-to-down {
+    transform: translateY(-50px);
+    opacity: 0;
+}
+
+.show-animate .fade-in-to-down {
+    transform: translateX(0);
+    opacity: 100%;
 }

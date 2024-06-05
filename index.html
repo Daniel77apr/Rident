@@ -7,42 +7,60 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
   </head>
   <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand fixed-top">
+    <nav class="navbar navbar-expand fixed-top" data-bs-theme="dark">
         <div class="container-lg dark-blue-text">
           <a class="navbar-brand" href="#">Dra. Flor Delgado</a>
           <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="btn custom-btn-light-blue" href="https://www.doctoralia.com.mx/flor-angelica-delgado-de-alba/dentista-odontologo/san-luis-potosi">Agenda tu cita</a>
+          <a class="btn custom-btn-green rounded-pill" href="https://www.doctoralia.com.mx/flor-angelica-delgado-de-alba/dentista-odontologo/san-luis-potosi">Agenda tu cita</a>
         </div>
     </nav>
 
     <!--HERO-->
-    <section class="hero fixed-img-bg full-height">
+    <section class="hero py-5">
       <div class="container-lg">
-          <div class="row align-items-center justify-content-center justify-content-md-end px-4 px-md-0">
-              <div class="col-md-6 p-5 text-box">
-                  <p class="lead"><em>En el consultorio nuestra prioridad es el bienestar de nuestros pacientes; Nuestros tratamientos se enfocan en la recuperación y mantenimiento de la salud. Creemos que el consultorio debe tener un ambiente seguro en el que nuestros pacientes se sientan cómodos.</em></p>
-                  <p class="text-end h5">Dra. Flor Delgado</p>
-              </div>
+          <img src="Images/logotipo.svg" alt="" class="logotipo mb-5 animate fade-in-to-right">
+          <div class="row align-items-center px-4 pt-4 pt-md-0 mx-1 justify-content-center rounded-4 shadow animate fade-in-grow">
+            <div class="col-12 col-md-8">
+              <p class="lead"><em>"En el consultorio nuestra prioridad es el bienestar de nuestros pacientes; Nuestros tratamientos se enfocan en la recuperación y mantenimiento de la salud. Creemos que el consultorio debe tener un ambiente seguro en el que nuestros pacientes se sientan cómodos."</em></p>
+              <p class="text-end h5">Dra. Flor Delgado</p>
+            </div>
+            <div class="col-8 col-md-4">
+              <img src="Images/Doctora Flor Delgado.jpeg" alt="" class="rounded-4">
+            </div>
+              
           </div>
       </div>
     </section>
 
-    <!--SERVICIOS-->
-    <section class="servicios pb-5 fixed-img-bg">
-        <h2 class="text-center mb-3 transparent-white-bg p-4 mb-5">Servicios</h2>
-        <div class="container-lg">
-            <div class="row g-4">
-              
-              <div class="col-md-6">
-                <div class="card transparent-white-bg">
-                      <img src="Images/logo - esteticos.svg" class="p-3" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Tratamientos Estéticos</h5>
+    <!--TRATAMIENTOS-->
+    <section class="tratamientos pb-5">
+      
+      <div class="container-lg">
+        <h2 class="text-end pb-5 display-2 animate fade-in-to-left">Tratamientos</h2>
+        <div class="row g-4">
+          
+          <div class="col-md-6 animate fade-in-grow">
+            <div class="card rounded-4">
+              <img src="Images/logo - esteticos.svg" class="p-3" alt="...">
+              <div class="card-body">
+                <div class="accordion" id="accordionEsteticos">
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <h5>Tratamientos Estéticos</h5>
+                      </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                      <div class="accordion-body">
                         <ul>
                           <li>Blanqueamiento dental</li>
                           <li>Carillas de porcelana</li>
@@ -51,27 +69,51 @@
                           <li>Prótesis estéticas</li>
                         </ul>
                       </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="col-md-6">
-                <div class="card transparent-white-bg">
-                      <img src="Images/logo - ortodoncia.svg" class="p-3" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Ortodoncia</h5>
+          <div class="col-md-6 animate fade-in-grow">
+            <div class="card rounded-4">
+              <img src="Images/logo - ortodoncia.svg" class="p-3" alt="...">
+              <div class="card-body">
+                <div class="accordion" id="accordionOrtodoncia">
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h5>Ortodoncia</h5>
+                      </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionOrtodoncia" style="">
+                      <div class="accordion-body">
                         <ul>
                           <li>Brackets de ceramica</li>
                           <li>Ortodoncia convenciaonal</li>
                         </ul>
                       </div>
-                </div>
+                    </div>
+                  </div>
+                </div>  
               </div>
+            </div>
+          </div>
 
-              <div class="col-md-6">
-                <div class="card transparent-white-bg">
-                      <img src="Images/logo - cirugia.svg" class="p-3" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Cirugía Dental</h5>
+          <div class="col-md-6 animate fade-in-grow">
+            <div class="card rounded-4">
+              <img src="Images/logo - cirugia.svg" class="p-3" alt="...">
+              <div class="card-body">
+                <div class="accordion" id="accordionCirugia">
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h5>Cirugía Dental</h5>
+                      </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                      <div class="accordion-body">
                         <ul>
                           <li>Cirugía del tercer molar</li>
                           <li>Cirugía preprotésica implante endoóseo</li>
@@ -85,14 +127,26 @@
                           <li>Reparación de fractura o luxación alveolar dentaria</li>
                         </ul>
                       </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="col-md-6">
-                <div class="card transparent-white-bg">
-                      <img src="Images/logo - prevencion.svg" class="p-3" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Prevención y Cuidado Bucal</h5>
+          <div class="col-md-6 animate fade-in-grow">
+            <div class="card rounded-4">
+              <img src="Images/logo - prevencion.svg" class="p-3" alt="...">
+              <div class="card-body">
+                <div class="accordion" id="accordionPrevencion">
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <h5>Prevención y Cuidado Bucal</h5>
+                      </button>
+                    </h3>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                      <div class="accordion-body">
                         <ul>
                           <li>Curetaje</li>
                           <li>Desbridamiento y drenaje de absceso</li>
@@ -104,14 +158,26 @@
                           <li>Resinas dentales</li>
                         </ul>
                       </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="col-md-6">
-                <div class="card transparent-white-bg">
-                      <img src="Images/logo - endodoncia.svg" class="p-3" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Endodoncia</h5>
+          <div class="col-md-6 animate fade-in-grow">
+            <div class="card rounded-4">
+              <img src="Images/logo - endodoncia.svg" class="p-3" alt="...">
+              <div class="card-body">
+                <div class="accordion" id="accordionEndodoncia">
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <h5>Endodoncia</h5>
+                      </button>
+                    </h3>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                      <div class="accordion-body">
                         <ul>
                           <li>Endopostes de fibras de vidrio (estéticos)</li>
                           <li>Pulpectomía - Pulpotomía</li>
@@ -119,14 +185,26 @@
                           <li>Tratamiento de Endodoncia</li>
                         </ul>
                       </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="col-md-6">
-                <div class="card transparent-white-bg">
-                      <img src="Images/logo - protesis.svg" class="p-3" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Prótesis Denatales</h5>
+          <div class="col-md-6 animate fade-in-grow">
+            <div class="card rounded-4">
+              <img src="Images/logo - protesis.svg" class="p-3" alt="...">
+              <div class="card-body">
+                <div class="accordion" id="accordionProtesis">
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <h5>Prótesis Denatales</h5>
+                      </button>
+                    </h3>
+                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                      <div class="accordion-body">
                         <ul>
                           <li>Prótesis flexibles</li>
                           <li>Prótesis híbridas</li>
@@ -134,97 +212,143 @@
                           <li>Prótesis totales</li>
                         </ul>
                       </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-
             </div>
+          </div>
+
         </div>
+      </div>
+    </section>
+
+    <!--INSTALACIONES-->
+    <section class="instalaciones pb-5">
+      <div class="container-lg">
+        <h2 class="py-5 display-2 animate fade-in-to-right">Instalaciones</h2>
+        <div class="container-lg p-0">
+          <div class="row g-4">
+            <div class="col-6 col-md-3 animate fade-in-grow">
+              <img src="Images/instalaciones - Copy/IMG_8186.jpg" alt="" class="rounded-4 shadow">
+            </div>
+            <div class="col-6 col-md-3 animate fade-in-grow">
+              <img src="Images/instalaciones - Copy/recepcion.jpg" alt="" class="rounded-4 shadow">
+            </div>
+            <div class="col-6 col-md-3 animate fade-in-grow">
+              <img src="Images/instalaciones - Copy/unidad gris 7.jpg" alt="" class="rounded-4 shadow">
+            </div>
+            <div class="col-6 col-md-3 animate fade-in-grow">
+              <img src="Images/instalaciones - Copy/unidad gris.jpg" alt="" class="rounded-4 shadow">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--OPINIONES-->
     <section class="opiniones pb-5 fixed-img-bg">
-        <h2 class="text-center mb-3 transparent-white-bg p-4 mb-5">Opiniones</h2>
-        <div class="container-lg">
-            <div class="row">
+      <div class="container-lg">
+        <h2 class="text-end py-5 display-2 animate fade-in-to-left">Opiniones</h2>
+        <div class="row">
 
-                <div class="col-lg-6 col-xl-3 my-3">
-                    <div class="card transparent-white-bg">
-                        <div class="card-body">
-                            <h5 class="card-title">Carlos Rodríguez</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </h6>
-                            <p class="card-text">Excelente servicio, profesional y la doctora es muy cuidadosa. Explica de manera clara todo el procedimiento. Recomendada en un 100%</p>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="col-lg-6 col-xl-3 my-3">
-                    <div class="card transparent-white-bg">
-                        <div class="card-body">
-                            <h5 class="card-title">Diego Alba</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </h6>
-                            <p class="card-text">Me atendieron muy bien, no sentí dolor ni molestias en el tratamiento. Muy profesionales Flor y Mariana. Muchas gracias :)</p>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="col-lg-6 col-xl-3 my-3">
-                    <div class="card transparent-white-bg">
-                        <div class="card-body">
-                            <h5 class="card-title">Germán Elías</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </h6>
-                            <p class="card-text">¡Excelente servicio! El trato es bueno, las instalaciones impecables.</p>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="col-lg-6 col-xl-3 my-3">
-                    <div class="card transparent-white-bg">
-                        <div class="card-body">
-                            <h5 class="card-title">Natalia Ramirez</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </h6>
-                            <p class="card-text">Excelente atención y servicio, es muy amable la doctora.</p>
-                        </div>
-                      </div>
-                </div>
-
+          <div class="col-lg-6 col-xl-3 my-3 animate fade-in-grow">
+            <div class="card rounded-4">
+              <div class="card-body">
+                <h5 class="card-title">Carlos Rodríguez</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </h6>
+                <p class="card-text">Excelente servicio, profesional y la doctora es muy cuidadosa. Explica de manera clara todo el procedimiento. Recomendada en un 100%</p>
+              </div>
             </div>
+          </div>
+
+          <div class="col-lg-6 col-xl-3 my-3 animate fade-in-grow">
+            <div class="card  rounded-4">
+              <div class="card-body">
+                <h5 class="card-title">Diego Alba</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </h6>
+                <p class="card-text">Me atendieron muy bien, no sentí dolor ni molestias en el tratamiento. Muy profesionales Flor y Mariana. Muchas gracias :)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xl-3 my-3 animate fade-in-grow">
+            <div class="card  rounded-4">
+              <div class="card-body">
+                <h5 class="card-title">Germán Elías</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </h6>
+                <p class="card-text">¡Excelente servicio! El trato es bueno, las instalaciones impecables.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xl-3 my-3 animate fade-in-grow">
+            <div class="card  rounded-4">
+              <div class="card-body">
+                <h5 class="card-title">Natalia Ramirez</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </h6>
+                <p class="card-text">Excelente atención y servicio, es muy amable la doctora.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
+      </div>
     </section>
 
-    <!--CONTACT-->
-    <section class="py-5 dark-blue-bg">
-        <div class="container-lg">
-            <p class="text-center">Dra. Flor Delgado</p>
-            <p class="text-center">Rident Clinica Dental</p>
-            <p class="text-center"><i class="bi bi-geo-alt-fill"></i> Luis de Mendizabal 121, San Luis Potosí, S.L.P., México</p>
-            <p class="text-center"><i class="bi bi-telephone-fill"></i> 444 587 0091</p>
+    <!--CONTACTO-->
+    <section class="contacto py-5">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col">
+            <a class="btn custom-btn-green rounded-pill mb-3" href="https://www.doctoralia.com.mx/flor-angelica-delgado-de-alba/dentista-odontologo/san-luis-potosi">Agenda tu cita</a>
+            <ul class="p-0 text-center text-sm-start">
+              <li class="mb-2">
+                Dra. Flor Delgado
+              </li>
+              <li class="mb-2">
+                Rident Clinica Dental
+              </li>
+              <li class="mb-2">
+                <a href="https://maps.app.goo.gl/mSMXdYCvq9WCFwev6" class="text-center text-sm-start"><i class="bi bi-geo-alt-fill"></i> Luis de Mendizabal 121, San Luis Potosí, S.L.P., México</a>
+              </li>
+              <li>
+                <a href="tel:4445870091" class="text-center text-sm-start"><i class="bi bi-telephone-fill"></i> 444 587 0091</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.692121582963!2d-100.99910348837531!3d22.137711379719608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a98ba38d81cc5%3A0xfe2338bd91187c9!2sConsutorio%20dental%20Rident!5e0!3m2!1ses-419!2smx!4v1717360453003!5m2!1ses-419!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-4"></iframe>
+          </div>
         </div>
+      </div>  
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="Javascript/script.js"></script>
   </body>
 </html>
